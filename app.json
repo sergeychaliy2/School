@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Расписание Новоселицкой СОШ",
+    "slug": "novoselicy-schedule",
+    "version": "1.2.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "novoselicy",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#0B1020",
+    "primaryColor": "#4C6FFF",
+    "android": {
+      "package": "ru.novoselicy.schedule",
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "backgroundColor": "#3E5BF0",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#4C6FFF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 96
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Разрешить доступ к выбранным фотографиям, чтобы прикреплять снимки домашних заданий.",
+          "cameraPermission": "Разрешить камеру, чтобы фотографировать задания и прикреплять их к домашней работе."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

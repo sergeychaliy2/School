@@ -1,0 +1,29 @@
+# Зависимости
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Нативные сборки
+android/build/
+android/app/build/
+android/.gradle/
+android/.idea/
+android/local.properties
+ios/build/
+ios/Pods/
+
+# Релизные ключи подписи — в репозиторий не кладём
+*.jks
+*.keystore
+!android/app/debug.keystore
+keystore.properties
+
+# Прочее
+.DS_Store
+*.log
+npm-debug.*
+.env*.local
